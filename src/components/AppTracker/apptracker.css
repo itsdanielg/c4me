@@ -1,0 +1,31 @@
+#appContainer {
+    display: flex;
+    align-items: center;
+    margin: 0em;
+}
+
+#appContainer input {
+    width: 16em;
+    height: 2.5em;
+    padding: 0em 0.7em;
+    margin-left: 2em;
+    font-size: 1.2em;
+}
+
+.appTrackerTable tr td:nth-of-type(1) {
+    width: 15%;
+}
+
+.appTrackerTable tr td:nth-of-type(2) {
+    width: 30%;
+}
+
+.displayScatterContainer {
+    text-align: right;
+}
+
+.displayScatterContainer button {
+    padding: 1em 5em;
+    font-size: 1.7em;
+    margin: 0em;
+}

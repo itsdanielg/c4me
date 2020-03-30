@@ -1,0 +1,59 @@
+.loginPage {
+    height: 100%;
+}
+
+#loginLogo {
+    width: 20%;
+    text-align: center;
+    margin-left: 6em;
+}
+
+.loginCenter {
+    position: relative;
+    z-index: 1;
+    margin: 0% 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.loginDescription {
+    display: flex;
+    align-items: center;
+    height: 30em;
+    width: 35em;
+    padding: 36px;
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 46px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.formGroup {
+    padding: 40px;
+    text-align: center;
+    background: #dfdfdf;
+    border-radius: 20px;
+}
+
+.formField {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+}
+
+.formField input {
+    margin-top: 1em;
+    width: 18em;
+    height: 2.2em;
+    padding: 0em 0.7em;
+    font-size: 1.1em;
+    margin-bottom: 1em;
+}
+
+.newClick:hover {
+    cursor: pointer;
+    color: #f0f0f0;
+}
