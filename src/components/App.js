@@ -15,12 +15,12 @@ function App() {
     return(
         <div className="App">
             <Route exact path='/' component={Login}/>
-            <Route exact path='/administrator' component={Administrator}/>
-            <Route exact path='/home' component={Home}/>
-            <Route exact path='/profile' component={Profile}/>
-            <Route exact path='/collegesearch' component={CollegeSearch}/>
-            <Route exact path='/highschools' component={HighSchools}/>
-            <Route exact path='/apptracker' component={AppTracker}/>
+            <Route path='/administrator' component={Administrator}/>
+            <Route path='/home' component={Home}/>
+            <Route path='/profile' component={Profile}/>
+            <Route path='/collegesearch' component={CollegeSearch}/>
+            <Route path='/highschools' component={HighSchools}/>
+            <Route path='/apptracker' component={AppTracker}/>
             <Footer/>
         </div>
     );
