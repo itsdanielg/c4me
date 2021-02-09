@@ -1,5 +1,5 @@
 {
-  "homepage": "http://itsdanielg.github.io/c4me-College-4-Me",
+  "homepage": "http://itsdanielg.github.io/c4me",
   "name": "c4me",
   "version": "0.1.0",
   "private": true,
@@ -18,7 +18,7 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
