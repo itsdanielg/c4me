@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/c4me/static/css/main.2f5e9355.chunk.css",
-    "main.js": "/c4me/static/js/main.2f6bc42f.chunk.js",
-    "main.js.map": "/c4me/static/js/main.2f6bc42f.chunk.js.map",
+    "main.js": "/c4me/static/js/main.fad958f3.chunk.js",
+    "main.js.map": "/c4me/static/js/main.fad958f3.chunk.js.map",
     "runtime-main.js": "/c4me/static/js/runtime-main.18f5d66f.js",
     "runtime-main.js.map": "/c4me/static/js/runtime-main.18f5d66f.js.map",
-    "static/js/2.a8f42b60.chunk.js": "/c4me/static/js/2.a8f42b60.chunk.js",
-    "static/js/2.a8f42b60.chunk.js.map": "/c4me/static/js/2.a8f42b60.chunk.js.map",
+    "static/js/2.edcd8ac3.chunk.js": "/c4me/static/js/2.edcd8ac3.chunk.js",
+    "static/js/2.edcd8ac3.chunk.js.map": "/c4me/static/js/2.edcd8ac3.chunk.js.map",
     "index.html": "/c4me/index.html",
-    "precache-manifest.dab22cc7491a18e825cc536b59851cc3.js": "/c4me/precache-manifest.dab22cc7491a18e825cc536b59851cc3.js",
+    "precache-manifest.48855b590fdd2740c7734de4719b7e4f.js": "/c4me/precache-manifest.48855b590fdd2740c7734de4719b7e4f.js",
     "service-worker.js": "/c4me/service-worker.js",
     "static/css/main.2f5e9355.chunk.css.map": "/c4me/static/css/main.2f5e9355.chunk.css.map",
-    "static/js/2.a8f42b60.chunk.js.LICENSE.txt": "/c4me/static/js/2.a8f42b60.chunk.js.LICENSE.txt",
+    "static/js/2.edcd8ac3.chunk.js.LICENSE.txt": "/c4me/static/js/2.edcd8ac3.chunk.js.LICENSE.txt",
     "static/media/collegesearch.css": "/c4me/static/media/Stony Brook University.0581e027.jpg",
     "static/media/index.css": "/c4me/static/media/background.32a1ef63.jpg",
     "static/media/editbutton.png": "/c4me/static/media/editbutton.9947e0f8.png",
@@ -19,8 +19,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.18f5d66f.js",
-    "static/js/2.a8f42b60.chunk.js",
+    "static/js/2.edcd8ac3.chunk.js",
     "static/css/main.2f5e9355.chunk.css",
-    "static/js/main.2f6bc42f.chunk.js"
+    "static/js/main.fad958f3.chunk.js"
   ]
 }
