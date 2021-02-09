@@ -1,0 +1,325 @@
+#sortContainer {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding-top: 0em;
+	padding-bottom: 0em;
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+
+#sortContainer button {
+	font-size: 1em;
+}
+
+#sortContainer button:nth-of-type(5) {
+	background: #e90000;
+}
+
+#searchContainer {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding-top: 0em;
+	padding-bottom: 0em;
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+
+#searchContainer button {
+	font-size: 2.5em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+#collegeResultContainer {
+	position: relative;
+	z-index: 0;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-evenly;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.rangeContainer {
+	position: relative;
+	width: 25em;
+	border: 0.2em solid #eeeeee;
+	padding: 1em;
+}
+
+.rangeFieldContainer {
+	position: relative;
+	width: 100%;
+	margin-bottom: 3em;
+}
+
+.rangeLabels {
+	display: flex;
+	align-items: flex-start;
+}
+
+.rangeLabels p {
+	width: 10em;
+	height: 3em;
+	text-align: right;
+}
+
+.rangeLabels input {
+	width: 22%;
+	height: 2em;
+	margin-left: 1em;
+	padding: 0.5em;
+}
+
+.rangeSliders {
+	position: relative;
+	width: 100%;
+}
+
+.rangeSliders input {
+	position: absolute;
+	pointer-events: none;
+	-webkit-appearance: none;
+	z-index: 5;
+	height: 0.5em;
+	width: 100%;
+	opacity: 0;
+}
+
+.rangeSliders input::-webkit-slider-thumb {
+	pointer-events: all;
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 0;
+	border: 0 none;
+	-webkit-appearance: none;
+	cursor: pointer;
+}
+
+.actualSlider {
+	position: relative;
+	z-index: 1;
+	height: 0.5em;
+	margin: 0 0.5em;
+}
+
+.sliderTrack {
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border-radius: 0.5em;
+	background-color: #8a88ff;
+}
+
+.sliderRange {
+	position: absolute;
+	z-index: 2;
+	left: 25%;
+	right: 25%;
+	top: 0;
+	bottom: 0;
+	border-radius: 0.5em;
+	background-color: #0d25ff;
+}
+
+.sliderLeftThumb {
+	position: absolute;
+	z-index: 3;
+	width: 1.5em;
+	height: 1.5em;
+	background-color: #0d25ff;
+	border-radius: 50%;
+	left: 25%;
+	transform: translate(-1em, -0.5em);
+}
+
+.sliderRightThumb {
+	position: absolute;
+	z-index: 3;
+	width: 1.5em;
+	height: 1.5em;
+	background-color: #0d25ff;
+	border-radius: 50%;
+	right: 25%;
+	transform: translate(1em, -0.5em);
+}
+
+#locationContainer {
+	margin-bottom: 0.5em;
+}
+
+#majorContainer {
+	margin-bottom: 1em;
+}
+
+.dropDownContainer {
+	margin-left: 1em;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.dropDownContainer select {
+	background-color: #f3f3f3;
+	border-radius: 0.5em;
+	border: 0;
+	width: 14em;
+	height: 2em;
+	margin-bottom: 1em;
+}
+
+.filterRB {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.filterRB label {
+    font-size: 1.1em;
+}
+
+#filterStatus {
+    width: 3em;
+    height: 1.5em;
+    padding: 0;
+}
+
+.resultsContainer {
+	height: 63em;
+	width: 50em;
+	text-align: center;
+	border: 0.2em solid #eeeeee;
+	overflow-y: auto;
+}
+
+.resultBox {
+	background: rgba(30, 30, 30, 0.2);
+	display: flex;
+	align-items: center;
+	height: 8em;
+	border: 1px solid black;
+	margin: 1em;
+	overflow-y: auto;
+	overflow-x: auto;
+}
+
+.resultBox:hover {
+	background: #cecece;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.resultName {
+	width: 50%;
+	padding: 1em;
+}
+
+.resultName h2 {
+	font-size: 1.3em;
+}
+
+.resultInfo {
+	width: 40%;
+	text-align: left;
+}
+
+.recommendationScore {
+	color: #d40000;
+	padding: 1em;
+}
+
+.reccom {
+	color: red;
+	font-size: 20px;
+	border-style: inset;
+	border: 2px solid #1E90FF;
+}
+
+#modalContainer {
+	display: none;
+	position: fixed;
+	z-index: 2;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.4);
+}
+
+.collegeModalContainer {
+	position: fixed;
+	top: 10%;
+	left: 50%;
+    transform: translate(-50%, 0);
+	background-color: #f0f0f0;
+	width: 70%;
+	height: auto;
+	border-radius: 2em;
+	animation-name: animateModal;
+  	animation-duration: 0.4s
+}
+
+/* Add Animation */
+@keyframes animateModal {
+	from {top: -25%; opacity: 0}
+	to {top: 10%; opacity: 1}
+}
+
+.collegeImage {
+	background-image: url('../images/Stony\ Brook\ University.jpg');
+	background-position: center;
+	background-size: cover;
+	margin: 2em;
+	height: 15em;
+	border-radius: 2em;
+}
+
+.collegeContent {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+}
+
+.collegeTextInfo {
+	width: 30em;
+	height: 24em;
+}
+
+.collegeInfo {
+	font-size: 1.1em;
+}
+
+.collegeStats {
+	font-size: 0.9em;
+	margin-top: 2em;
+}
+
+.collegeSimilar {
+	width: 30em;
+	height: 24em;
+}
+
+.collegeSimilar p {
+	text-align: right;
+}
+
+#modalSimilar {
+	justify-content: center;
+	height: 6em;
+	pointer-events: none;
+	cursor: default;
+}
+
+#modalSimilar h2 {
+	font-size: 1.3em;
+}
+
+#modalSimilar > .resultInfo {
+	width: auto;
+	text-align: left;
+}

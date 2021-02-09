@@ -5,18 +5,23 @@ function LoginPrompt(props) {
 
     return(
         <div className='formGroup'>
-            <div className='formField'>
-                <input type="text" name="username" placeholder="Username" />
+            <div className="formField">
+                <input className="formInput" type="text" name="username" id="usernamelogin" placeholder="Username" />
             </div>
-            <div className='formField'>
-                <input type="text" name="password" placeholder="Password" />
+            <p className="emptyField" id="emptyUser" hidden>Please enter a username.</p>
+            <div className="formField">
+                <input className="formInput" type="password" name="password" id="passwordlogin" placeholder="Password" />
             </div>
+            <p className="emptyField" id="emptyPass" hidden>Please enter a password.</p>
             <div >
                 <Link to='/home'>
                     <button className="formButton">Login</button>
                 </Link>
             </div>
-            <label className="newClick" onClick={props.changeForm}>New User?</label>
+            <div className="otherForms">
+                <label className="newClick" onClick={() => props.setFormState(2)}>New User?</label>
+                <label className="newClick" onClick={() => props.setFormState(1)}>Admin Login</label>
+            </div>
         </div>
     )
     

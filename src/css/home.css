@@ -1,0 +1,45 @@
+.welcomeMessage {
+    text-align: center;
+    font-size: 4em;
+    margin: 0.1em 0em;
+}
+
+.signout button {
+    font-size: 1.2em;
+    margin: 0em;
+}
+
+.toggleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.toggle {
+    height: 17em;
+    width: 25em;
+    margin: 1em 1.2em;
+    border-radius: 1em;
+    background: #dfdfdf;
+    text-align: center;
+}
+
+.toggle button {
+    width: 80%;
+    height: 40%;
+    text-decoration: none;
+    font-size: 1.3em;
+    line-height: 1.3em;
+}
+
+.toggle button:hover {
+    text-decoration: none;
+}
+
+.toggle p {
+    font-size: 1.2em;
+    margin: 0.2em 0.8em;
+}

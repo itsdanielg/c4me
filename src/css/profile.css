@@ -1,0 +1,116 @@
+.fieldContainer {
+    display: flex;
+    align-items: center;
+    padding: 0.8em 0em;
+    font-size: 1.2em;
+}
+
+.fieldContainer input {
+    width: 20em;
+    height: 2em;
+    margin-left: 2em;
+    padding: 0em 0.7em;
+    font-size: 1em;
+}
+
+.fieldContainer label {
+    font-weight: bold;
+}
+
+.currentLabel {
+    margin-left: 1em;
+}
+
+.editButton {
+    width: 2%;
+    min-width: 2;
+    margin-left: 4em;
+    cursor: pointer;
+}
+
+.editButton img{
+    display: block;
+    width: 100%
+}
+
+.updateButtonContainer {
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.updateButtonContainer button {
+    margin: 0em;
+    margin-right: 1em;
+    padding: 1em 6em;
+    font-size: 1em;
+}
+
+.confirmPassFields {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.confirmPassFields input {
+    margin-bottom: 0.5em;
+}
+
+#statisticsSectionContainer {
+    margin: 0;
+    padding-top: 1em;
+}
+
+.statisticsContainer {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.statisticsContainer h1 {
+    font-size: 3.5em;
+}
+
+#acceptanceContainer {
+    margin-top: 0.5em;
+    font-size: 1em;
+    align-items: flex-start;
+}
+
+#acceptanceContainer button {
+    padding: 1em 3em;
+    margin: 0em;
+    font-size: 2em;
+}
+
+#collegeField {
+    font-size: 1.3em;
+    margin-right: 2.5em;
+    margin-left: 0;
+}
+
+.acceptanceRBContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-right: 10em;
+}
+
+.acceptanceRB {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.acceptanceRB label {
+    font-size: 1.3em;
+}
+
+#appStatus {
+    width: 3em;
+    height: 1.5em;
+    padding: 0;
+}
+
+.acceptanceTable tr th:first-of-type {
+    width: 65%;
+}

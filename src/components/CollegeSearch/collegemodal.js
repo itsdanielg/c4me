@@ -1,6 +1,6 @@
 import React from 'react';
 import Modal from 'react-modal';
-import './collegesearch.css';
+import '../../css/collegesearch.css';
 
 Modal.setAppElement('#root');
 
@@ -22,8 +22,8 @@ function CollegeModal(props) {
                             borderRadius: '2em',
                             marginLeft: '17.5%',
                             marginTop: '3%',
-                            height: '80%',
-                            width: '60%'
+                            height: '0%',
+                            width: '0%'
                         } 
                     }
                 }
@@ -48,20 +48,35 @@ function CollegeModal(props) {
                             </div>
                         </div>
                         <div className='collegeSimilar'>
-                            <p>Students with similar profiles also applied to these colleges:</p>
+                            <p>Students with similar profiles who applied to this college:</p>
                             <div className='resultBox' id='modalSimilar'>
-                                <div >
-                                    <h2>University at Buffalo</h2>
+                                <div className="resultName">
+                                    <h2>Alexander Lee</h2>
+                                </div>
+                                <div className="resultInfo">
+                                    <p>Status: <strong>Accepted</strong></p>
+                                    <p>AVG Sat Math: <strong>790</strong></p>
+                                    <p>AVG SAT EBRW: <strong>700</strong></p>
                                 </div>
                             </div>
                             <div className='resultBox' id='modalSimilar'>
-                                <div >
-                                    <h2>Binghamton University</h2>
+                            <div className="resultName">
+                                    <h2>John Smith</h2>
+                                </div>
+                                <div className="resultInfo">
+                                    <p>Status: <strong>Accepted</strong></p>
+                                    <p>AVG Sat Math: <strong>780</strong></p>
+                                    <p>AVG SAT EBRW: <strong>720</strong></p>
                                 </div>
                             </div>
                             <div className='resultBox' id='modalSimilar'>
-                                <div >
-                                    <h2>Columbia University</h2>
+                            <div className="resultName">
+                                    <h2>Ryan Taylor</h2>
+                                </div>
+                                <div className="resultInfo">
+                                    <p>Status: <strong>Denied</strong></p>
+                                    <p>AVG Sat Math: <strong>620</strong></p>
+                                    <p>AVG SAT EBRW: <strong>560</strong></p>
                                 </div>
                             </div>
                         </div>

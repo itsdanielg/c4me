@@ -1,7 +1,7 @@
 import React from 'react'
 import Logo from '../logo';
 import {Link} from 'react-router-dom';
-import './home.css';
+import '../../css/home.css';
 
 function Home() {
 
@@ -23,25 +23,25 @@ function Home() {
                     <Link to='/profile'>
                         <button>View / Edit Profile</button>
                     </Link>
-                    <p>(Description of View/Edit Profile)</p>
+                    <p>View and edit current profile information and statistics.</p>
                 </div>
                 <div className="toggle">
                     <Link to='/collegesearch'>
                         <button>Search for Colleges / College Recommender</button>
                     </Link>
-                    <p>(Description of Search for Colleges/College Recommender)</p>
+                    <p>Search for colleges and view your recommendation score for each college listed.</p>
                 </div>
                 <div className="toggle">
                     <Link to='/highschools'>
                         <button>Find Similar High Schools</button>
                     </Link>
-                    <p>(Description of Find Similar High Schools)</p>
+                    <p>Find similar high schools to a high school entered.</p>
                 </div>
                 <div className="toggle">
                     <Link to='/apptracker'>
                         <button>Application Tracker</button>
                     </Link>
-                    <p>(Description of Application Tracker)</p>
+                    <p>View students who applied to similar colleges.</p>
                 </div>
             </div>
         </div>

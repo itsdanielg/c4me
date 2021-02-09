@@ -2,31 +2,31 @@ import React, {useState} from 'react';
 import Logo from '../logo';
 import LoginPrompt from './loginprompt';
 import RegisterPrompt from './registerprompt';
-import './login.css';
+import AdminPrompt from './adminprompt';
+import '../../css/login.css';
 
 function Login() {
 
-    var [isRegister, setRegister] = useState(false);
+    var [formState, setFormState] = useState(0);
     var form;
 
-    const changeRegister = () => {
-        setRegister(!isRegister);
+    if (formState === 0) {
+        form = <LoginPrompt setFormState={setFormState}/>;
     }
-
-    if (!isRegister) {
-        form = <LoginPrompt changeForm={changeRegister}/>;
+    else if (formState === 1) {
+        form = <AdminPrompt setFormState={setFormState}/>;
     }
     else {
-        form = <RegisterPrompt changeForm={changeRegister}/>;
+        form = <RegisterPrompt setFormState={setFormState}/>;
     }
 
     return(
-        <div className='loginPage' id='AppBody'>
+        <div className='loginPage'>
             <Logo id='loginLogo'/>
             <div className='loginCenter'>
                 <div className='loginDescription'>
                     <p>
-                        (Description of c4me) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia lectus justo, sit amet interdum odio ultrices commodo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque ultrices venenatis lectus at aliquam. Donec a sodales nulla, at accumsan est. Etiam pretium leo felis, nec scelerisque tellus viverra a.
+                        Are you currently a high school student and don't know where to start with your college application process? Do you plan on receiving a bachelor's degree within the next 4 years of your college career? <strong>College 4 Me</strong> (stylized as <strong>c4me</strong>) is the website that will help and assist current high school students like you into applying to the top universities and colleges of your choosing. Register and login to learn more!
                     </p>
                 </div>
                 {form}

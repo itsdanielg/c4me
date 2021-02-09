@@ -1,0 +1,128 @@
+.App {
+    margin: 0 20em;
+    position: relative;
+    padding-bottom: 7.5em;
+    min-height: 100%;
+}
+
+.headerContainer {
+    height: 7em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0em;
+}
+
+.logo {
+    width: 10%;
+    min-width: 10%;
+}
+
+.logo img{
+    display: block;
+    width: 100%
+}
+
+.navBar {
+    display: flex;
+    padding: 0em;
+}
+
+.navBar button {
+    height: 4em;
+    width: 6em;
+    font-size: 1em;
+    border-radius: 0em;
+    padding: 0em 0.2em;
+    margin: 0em;
+}
+
+.pageHeading {
+    background: rgba(0, 0, 0, 0.5);
+    color: #f0f0f0;
+    text-align: center;
+    font-size: 1.7em;;
+    padding: 1em;
+}
+
+.footer {
+    position: absolute;
+    height: 7.5em;
+    width: 90%;
+    bottom: 0;
+    left: 5%;
+    border-top: 0.1em solid rgba(255, 255, 255, 0.6);
+    text-align: center;
+    padding: 3em 0em;
+    font-size: 0.9em;
+}
+
+.sectionContainer {
+    padding: 2em;
+    margin-top: 1em;
+}
+
+.sectionContainer h1 {
+    font-size: 2em;
+}
+
+button {
+    color: #f0f0f0;
+    background-color: #008cba;
+    border: 0.1em solid #008cba;
+    border-radius: 0.8em;
+    outline: none;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+    padding: 0.6em 2em;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover:enabled {
+    background-color: #f0f0f0;
+    color: #111111; 
+}
+
+button:disabled {
+    background-color: #008bba2d;
+    border: 0.1em solid #008bba2d;
+    cursor: default;
+}
+
+input {
+    background-color: #f3f3f3;
+    border-radius: 0.5em;
+    border: 0;
+    transition: all 250ms ease-in-out;
+}
+
+table {
+    width: 100%;
+    background-color: rgba(30, 30, 30, 0.3);
+}
+
+table, tr, th, td {
+    border: 0.2em solid #111111;
+    border-collapse: collapse;
+}
+
+tr, th, td {
+    padding: 1em;
+}
+
+th, td {
+    text-align: left;
+}
+
+tbody:nth-last-of-type(even) tr {
+    background-color: #dfdfdf;
+}
+
+thead:first-of-type tr {
+    background-color: #b4b4b4;
+}
